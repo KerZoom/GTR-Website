@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  .row.banner
+      .col-md-8
+      h1= pageHeader.title
+        small &nbsp;#{pageHeader.strapline}
+  .row
+    .col-12
+        .grid-container
+          each car in cars
+            .card
+                h4 Model:
+                p.a(car.model)= car.model
+                h4 Car year:
+                p.a(car.year)= car.year
+                h4 Horsepower:
+                p.a(car.horsepower)= car.horsepower
+                h4 Aspiration:
+                p.a(car.aspiration)= car.aspiration
+                .button
+                    a(href='/' + car.id) More Information
+                img(src=car.img)
+    .col-12
+
+

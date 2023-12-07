@@ -1,0 +1,42 @@
+extends layout
+
+block content
+    .row.banner
+        .col-12
+            h1= pageHeader.title
+            small &nbsp;#{pageHeader.strapline}
+    .row
+        .col-12.col-md-8
+            .card
+                img(src=details.img, width="700")
+            .grid-container
+                .card
+                    h2 Car Details:
+                    h4 Model:
+                    p.a(href="/cars")= details.model
+                    h4 Car year:
+                    p.a(href="/cars")= details.year
+                    h4 Aspiration:
+                    p.a(href="/cars")= details.aspiration
+                    h4 Body Style:
+                    p.a(href="/cars")= details.bodyStyle
+                    h4 Drive Train:
+                    p.a(href="/cars")= details.driveTrain
+                    h4 Gear Box:
+                    p.a(href="/cars")= details.gearbox
+                    h4 Seats:
+                    p.a(href="/cars")= details.seats
+                    h4 Doors:
+                    p.a(href="/cars")= details.doors
+                .card
+                    h2 Engine Details:
+                    h4 Engine Code:
+                    p.a(href="/cars")= details.engineCode
+                    h4 Displacement:
+                    p.a(href="/cars")= details.displacement
+                    h4 Torque:
+                    p.a(href="/cars")= details.torque
+                    h4 Horsepower:
+                    p.a(href="/cars")= details.horsePower
+                    h4 Cylinders:
+                    p.a(href="/cars")= details.cylinders
